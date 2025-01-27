@@ -3,230 +3,273 @@
     "start": {
       "dependencies": [],
       "display-name": "Begin contract",
-      "blurb": "Start programming Anime Murder Mystery."
+      "blurb": "Start programming Anime Murder Mystery.",
+      "icon": "assets/power.png"
     },
     "load-maps": {
       "dependencies": ["start"],
       "display-name": "Map voting",
-      "blurb": "Players can vote on a map, and it loads. Gameplay ends after four minutes, when players are teleported back to the lobby (includes timer UI)."
+      "blurb": "Players can vote on a map, and it loads. Gameplay ends after four minutes, when players are teleported back to the lobby (includes timer UI).",
+      "icon": "assets/map.png"
     },
 
     "spectate": {
       "dependencies": ["load-maps"],
       "display-name": "Spectate",
-      "blurb": "Players in the lobby can spectate others while they are still playing."
+      "blurb": "Players in the lobby can spectate others while they are still playing.",
+      "icon": "assets/binoculars.png"
     },
     "custom-chat": {
       "dependencies": ["spectate"],
       "display-name": "Custom chat",
-      "blurb": "Players in the lobby can't communicate with players in-game."
+      "blurb": "Players in the lobby can't communicate with players in-game.",
+      "icon": "assets/chat.png"
     },
     "settings": {
       "dependencies": ["load-maps"],
       "display-name": "Settings Menu",
-      "blurb": "Players can turn off shadows, music, and sound effects."
+      "blurb": "Players can turn off shadows, music, and sound effects.",
+      "icon": "assets/settings.png"
     },
 
     "pick-roles": {
       "dependencies": ["load-maps"],
       "display-name": "Assign roles",
-      "blurb": "Sakamoto, assassins, and targets are randomly assigned to players. The more times a player is assigned Target, the greater their chance to be Sakamoto or Assassin."
+      "blurb": "Sakamoto, assassins, and targets are randomly assigned to players. The more times a player is assigned Target, the greater their chance to be Sakamoto or Assassin.",
+      "icon": "assets/sheriff.png"
     },
-    
+
     "sprinting": {
       "dependencies": ["pick-roles"],
       "display-name": "Sprinting",
-      "blurb": "Targets can sprint for a short duration."
+      "blurb": "Targets can sprint for a short duration.",
+      "icon": "assets/sprint.png"
     },
     "pick-styles": {
       "dependencies": ["pick-roles"],
       "display-name": "Hero/Assassin styles",
-      "blurb": "Players can spin for Hero & Assassin styles in the lobby."
+      "blurb": "Players can spin for Hero & Assassin styles in the lobby.",
+      "icon": "assets/fortune-wheel.png"
     },
     "win-condition": {
       "dependencies": ["pick-roles"],
       "display-name": "Win Condition",
-      "blurb": "If all Targets die, Assassins win. If all Assassins die, Sakamoto wins (what if Sakamoto is dead first?). If the round ends, surviving Targets win (includes end-of-round UI modal)."
+      "blurb": "If all Targets die, Assassins win. If all Assassins die, Sakamoto wins (what if Sakamoto is dead first?). If the round ends, surviving Targets win (includes end-of-round UI modal).",
+      "icon": "assets/win.png"
     },
 
     "sakamoto": {
       "dependencies": ["pick-styles"],
       "display-name": "Sakamoto Attacks/Abilities",
-      "blurb": "This node helps organize the skill tree, but isn't a feature."
+      "blurb": "This node helps organize the skill tree, but isn't a feature.",
+      "icon": "assets/sakamoto.webp"
     },
 
     "assassin": {
       "dependencies": ["pick-styles"],
       "display-name": "Assassin Attacks/Abilities",
-      "blurb": "This node helps organize the skill tree, but isn't a feature."
+      "blurb": "This node helps organize the skill tree, but isn't a feature.",
+      "icon": "assets/kanaguri.webp"
     },
-    
+
     "punch": {
       "dependencies": ["sakamoto"],
       "display-name": "Punches",
-      "blurb": "Sakamoto (rare) can deal damage with a punch attack."
+      "blurb": "Sakamoto (rare) can deal damage with a punch attack.",
+      "icon": "assets/punch.png"
     },
     "kick": {
       "dependencies": ["punch"],
       "display-name": "Kicks",
-      "blurb": "Sakamoto (rare) can deal damage with a kick attack."
+      "blurb": "Sakamoto (rare) can deal damage with a kick attack.",
+      "icon": "assets/kick.png"
     },
     "mind-reader": {
       "dependencies": ["kick"],
       "display-name": "Mind Reader Ability",
-      "blurb": "Sakamoto (rare) can detect nearby enemies within a short radius by seeing them outlined in a faint glow."
+      "blurb": "Sakamoto (rare) can detect nearby enemies within a short radius by seeing them outlined in a faint glow.",
+      "icon": "assets/mind-reader.png"
     },
     "pistol": {
       "dependencies": ["sakamoto"],
       "display-name": "Pistol",
-      "blurb": "Lu Shaotang can shoot a pistol with four shots and a cooldown."
+      "blurb": "Lu Shaotang can shoot a pistol with four shots and a cooldown.",
+      "icon": "assets/pistol.png"
     },
     "dual-pistols": {
       "dependencies": ["pistol"],
       "display-name": "Dual Pistols Ability",
-      "blurb": "Lu Shaotang has an ability to dual-wield pistols with lighter damage and more shots."
+      "blurb": "Lu Shaotang has an ability to dual-wield pistols with lighter damage and more shots.",
+      "icon": "assets/dual-pistols.webp"
     },
     "legendary-attack": {
       "dependencies": ["sakamoto"],
       "display-name": "Sakamoto Legendary Attack",
-      "blurb": "Attacks that build momentum as you combo on someone (what is the attack?)."
+      "blurb": "Attacks that build momentum as you combo on someone (what is the attack?).",
+      "icon": "assets/legendary-attack.webp"
     },
     "bubblegum": {
       "dependencies": ["legendary-attack"],
       "display-name": "Bubblegum Ability",
-      "blurb": "Sakamoto (legendary) can spit bubblegum that expands into a sticky web, trapping Assassins in place for 3 seconds."
+      "blurb": "Sakamoto (legendary) can spit bubblegum that expands into a sticky web, trapping Assassins in place for 3 seconds.",
+      "icon": "assets/bubblegum.webp"
     },
 
     "knife-slash": {
       "dependencies": ["assassin"],
       "display-name": "Knife Slash",
-      "blurb": "Rare assassins can deal damage by slashing with a knife."
+      "blurb": "Rare assassins can deal damage by slashing with a knife.",
+      "icon": "assets/knife.png"
     },
     "knife-stealth-kills": {
       "dependencies": ["knife-slash"],
       "display-name": "Knife Stealth Kills Ability",
-      "blurb": "Rare assassins can discreetly kill someone with their knife without making any noise."
+      "blurb": "Rare assassins can discreetly kill someone with their knife without making any noise.",
+      "icon": "assets/ninja-knife.jpg"
     },
     "sword-slash": {
       "dependencies": ["assassin"],
       "display-name": "Sword Slash",
-      "blurb": "Epic assassins can deal damage by slashing with a sword, which has a longer reach than a knife."
+      "blurb": "Epic assassins can deal damage by slashing with a sword, which has a longer reach than a knife.",
+      "icon": "assets/sword.png"
     },
     "tofu-scramble": {
       "dependencies": ["sword-slash"],
       "display-name": "Tofu Scramble Ability",
-      "blurb": "Epic assassins can do a barrage of sword attacks quickly."
+      "blurb": "Epic assassins can do a barrage of sword attacks quickly.",
+      "icon": "assets/tofu.jpg"
     },
     "sword-stealth-kills": {
       "dependencies": ["sword-slash"],
       "display-name": "Sword Stealth Kills Ability",
-      "blurb": "Epic assassins can discreetly kill someone with their sword without making any noise."
+      "blurb": "Epic assassins can discreetly kill someone with their sword without making any noise.",
+      "icon": "assets/ninja-sword.jpg"
     },
     "camera-attack": {
       "dependencies": ["assassin"],
       "display-name": "Camera Attack",
-      "blurb": "Kanaguri can deal damage by hitting with his camera or tripod."
+      "blurb": "Kanaguri can deal damage by hitting with his camera or tripod.",
+      "icon": "assets/camera.png"
     },
     "camera-flash": {
       "dependencies": ["camera-attack"],
       "display-name": "Camera Flash Ability",
-      "blurb": "Kanaguri using his camera flash to blind others for two seconds."
+      "blurb": "Kanaguri using his camera flash to blind others for two seconds.",
+      "icon": "assets/camera-flash.webp"
     },
     "camera-stealth-kills": {
       "dependencies": ["camera-attack"],
       "display-name": "Camera Stealth Kills",
-      "blurb": "Kanaguri can discreetly kill someone with his camera without making any noise."
+      "blurb": "Kanaguri can discreetly kill someone with his camera without making any noise.",
+      "icon": "assets/ninja-camera.png"
     },
 
     "dash": {
       "dependencies": ["assassin"],
       "display-name": "Dashing",
-      "blurb": "Non-legendary Assassins can quickly dash forward with a cooldown."
+      "blurb": "Non-legendary Assassins can quickly dash forward with a cooldown.",
+      "icon": "assets/dash.png"
     },
     "garments": {
       "dependencies": ["pick-styles"],
       "display-name": "'Garment' System",
-      "blurb": "If Sakamoto dies, a Target can pick up his 'Garments' to become Sakamoto."
+      "blurb": "If Sakamoto dies, a Target can pick up his 'Garments' to become Sakamoto.",
+      "icon": "assets/garments.webp"
     },
 
     "levels": {
       "dependencies": ["start"],
       "display-name": "Levels & XP",
-      "blurb": "Players earn XP from surviving a whole match, winning a match, and kills. XP contributes to the player's level."
+      "blurb": "Players earn XP from surviving a whole match, winning a match, and kills. XP contributes to the player's level.",
+      "icon": "assets/level-up.png"
     },
     "yen": {
       "dependencies": ["start"],
       "display-name": "Yen",
-      "blurb": "Players can purchase (or gift) Yen with Robux or earn it from gameplay."
+      "blurb": "Players can purchase (or gift) Yen with Robux or earn it from gameplay.",
+      "icon": "assets/yen.png"
     },
 
     "style-slots": {
       "dependencies": ["pick-styles"],
       "display-name": "Style Slots",
-      "blurb": "Players can purchase (or gift) extra slots to store Hero & Assassin styles. Style slots can be locked."
+      "blurb": "Players can purchase (or gift) extra slots to store Hero & Assassin styles. Style slots can be locked.",
+      "icon": "assets/chest.png"
     },
     "lucky-spins": {
       "dependencies": ["pick-styles"],
       "display-name": "Lucky Spins",
-      "blurb": "Players can purchase (or gift) lucky spins, which have a higher chance of spinning a legendary or mythic style."
+      "blurb": "Players can purchase (or gift) lucky spins, which have a higher chance of spinning a legendary or mythic style.",
+      "icon": "assets/clover.jpg"
     },
     "redeem-codes": {
       "dependencies": ["style-slots"],
       "display-name": "Redeem Codes",
-      "blurb": "Players can redeem secret codes to earn style spins."
+      "blurb": "Players can redeem secret codes to earn style spins.",
+      "icon": "assets/promp.jpg"
     },
 
     "afk-chamber": {
       "dependencies": ["yen"],
       "display-name": "AFK Chamber",
-      "blurb": "Players who are AFK for a certain amount of time are teleported to a special place in the game, where they passively earn Yen."
+      "blurb": "Players who are AFK for a certain amount of time are teleported to a special place in the game, where they passively earn Yen.",
+      "icon": "assets/sleep.jpg"
     },
     "packs": {
       "dependencies": ["yen"],
       "display-name": "Cosmetic Packs",
-      "blurb": "Players can buy (or gift) packs with Robux/Yen, which contain emotes, auras, capes, and kill effects."
+      "blurb": "Players can buy (or gift) packs with Robux/Yen, which contain emotes, auras, capes, and kill effects.",
+      "icon": "assets/card-pack.jpg"
     },
     "daily-rewards": {
       "dependencies": ["yen", "pick-styles"],
       "display-name": "Daily Rewards",
-      "blurb": "Players earn daily rewards of yen or style spins for playing the game."
+      "blurb": "Players earn daily rewards of yen or style spins for playing the game.",
+      "icon": "assets/calendar.png"
     },
 
     "auras": {
       "dependencies": ["packs"],
       "display-name": "Auras",
-      "blurb": "Players can equip auras to their character."
+      "blurb": "Players can equip auras to their character.",
+      "icon": "assets/aura.png"
     },
     "emotes": {
       "dependencies": ["packs"],
       "display-name": "Emotes",
-      "blurb": "Players can equip emotes and play them at any time."
+      "blurb": "Players can equip emotes and play them at any time.",
+      "icon": "assets/emote.webp"
     },
     "capes": {
       "dependencies": ["packs"],
       "display-name": "Capes",
-      "blurb": "Players can equip capes to their character."
+      "blurb": "Players can equip capes to their character.",
+      "icon": "assets/cape.png"
     },
     "kill-effects": {
       "dependencies": ["packs", "pick-styles"],
       "display-name": "Kill Effects",
-      "blurb": "Players can equip kill effects to their character."
+      "blurb": "Players can equip kill effects to their character.",
+      "icon": "assets/magic-wand.png"
     },
 
     "stats": {
       "dependencies": ["win-condition"],
       "display-name": "Stats",
-      "blurb": "Players can view their stats in a lobby menu."
+      "blurb": "Players can view their stats in a lobby menu.",
+      "icon": "assets/stats.png"
     },
     "leaderboard": {
       "dependencies": ["stats"],
       "display-name": "In-game Leaderboard",
-      "blurb": "Players can press tab to see a list of all players in-game, separated into remaining players and lobby players."
+      "blurb": "Players can press tab to see a list of all players in-game, separated into remaining players and lobby players.",
+      "icon": "assets/contacts.webp"
     },
     "global-leaderboards": {
       "dependencies": ["stats"],
       "display-name": "Global Leaderboards",
-      "blurb": "Players can see the top ~20 players with the most hero wins, assassin wins, and rounds survived."
+      "blurb": "Players can see the top ~20 players with the most hero wins, assassin wins, and rounds survived.",
+      "icon": "assets/leaderboard.png"
     }
   }
 }
