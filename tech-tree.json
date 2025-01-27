@@ -1,9 +1,122 @@
 {
   "misc": {
-    "pretty-status-website": {
+    "start": {
       "dependencies": [],
       "display-name": "Begin contract",
-      "blurb": "Start programming Anime Murder Mystery"
+      "blurb": "Start programming Anime Murder Mystery."
+    },
+    "load-maps": {
+      "dependencies": ["start"],
+      "display-name": "Map voting",
+      "blurb": "Players can vote on a map, and it loads."
+    },
+    "pick-roles": {
+      "dependencies": ["load-maps"],
+      "display-name": "Assign roles",
+      "blurb": "Sakamoto, assassins, and targets are randomly assigned to players."
+    },
+  
+    "sprinting": {
+      "dependencies": ["pick-roles"],
+      "display-name": "Sprinting",
+      "blurb": "Targets can sprint for a short duration."
+    },
+    "pick-styles": {
+      "dependencies": ["pick-roles"],
+      "display-name": "Assign hero styles",
+      "blurb": "Assassins and Sakamoto are each randomly assigned one of three hero styles, respectively."
+    },
+    "win-condition": {
+      "dependencies": ["pick-roles"],
+      "display-name": "Win Condition",
+      "blurb": "If all Targets die, Assassins win. If all Assassins die, Sakamoto wins (what if Sakamoto is dead first?). If the round ends, surviving Targets win."
+    },
+  
+    "garments": {
+      "dependencies": ["pick-styles"],
+      "display-name": "'Garment' System",
+      "blurb": "If Sakamoto dies, a Target can pick up his 'Garments' to become Sakamoto."
+    },
+    "mind-reader": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Mind Reader Ability",
+      "blurb": "Sakamoto (rare) can detect nearby enemies within a short radius by seeing them outlined in a faint glow."
+    },
+    "punch": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Punches",
+      "blurb": "Sakamoto (rare) can deal damage with a punch attack."
+    },
+    "kick": {
+      "dependencies": ["punch"],
+      "display-name": "Kicks",
+      "blurb": "Sakamoto (rare) can deal damage with a kick attack."
+    },
+    "pistol": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Pistol",
+      "blurb": "Lu Shaotang can shoot a pistol with four shots and a cooldown."
+    },
+    "dual-pistols": {
+      "dependencies": ["pistol"],
+      "display-name": "Dual Pistols Ability",
+      "blurb": "Lu Shaotang has an ability to dual-wield pistols with lighter damage and more shots."
+    },
+    "legendary-attack": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Sakamoto Legendary Attack",
+      "blurb": "Attacks that build momentum as you combo on someone (what is the attack?)."
+    },
+    "bubblegum": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Bubblegum Ability",
+      "blurb": "Sakamoto (legendary) can spit bubblegum that expands into a sticky web, trapping Assassins in place for 3 seconds."
+    },
+
+    "dash": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Dashing",
+      "blurb": "Non-legendary Assassins can quickly dash forward with a cooldown."
+    },
+    "knife-slash": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Knife Slash",
+      "blurb": "Rare assassins can deal damage by slashing with a knife."
+    },
+    "sword-slash": {
+      "dependencies": ["knife-slash"],
+      "display-name": "Sword Slash",
+      "blurb": "Epic assassins can deal damage by slashing with a sword, which has a longer reach than a knife."
+    },
+    "knife-stealth-kills": {
+      "dependencies": ["knife-slash"],
+      "display-name": "Knife Stealth Kills Ability",
+      "blurb": "Rare assassins can discreetly kill someone with their knife without making any noise."
+    },
+    "tofu-scramble": {
+      "dependencies": ["sword-slash"],
+      "display-name": "Tofu Scramble Ability",
+      "blurb": "Epic assassins can do a barrage of sword attacks quickly."
+    },
+    "sword-stealth-kills": {
+      "dependencies": ["sword-slash", "knife-stealth-kills"],
+      "display-name": "Sword Stealth Kills Ability",
+      "blurb": "Epic assassins can discreetly kill someone with their sword without making any noise."
+    },
+    "camera-attack": {
+      "dependencies": ["pick-styles"],
+      "display-name": "Camera Attack",
+      "blurb": "Kanaguri can deal damage by hitting with his camera or tripod."
+    },
+    "camera-flash": {
+      "dependencies": ["camera-attack"],
+      "display-name": "Camera Flash Ability",
+      "blurb": "Kanaguri using his camera flash to blind others for two seconds."
+    },
+    "camera-stealth-kills": {
+      "dependencies": ["knife-stealth-kills"],
+      "display-name": "Camera Stealth Kills",
+      "blurb": "Kanaguri can discreetly kill someone with his camera without making any noise."
     }
   }
 }

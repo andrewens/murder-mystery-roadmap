@@ -4,7 +4,7 @@ const techTreeEdgesContainer = document.querySelector(".tech-tree-edges");
 const startButton = document.querySelector(".start-btn");
 
 const TECH_TREE_FILE = "./tech-tree.json";
-const DEFAULT_ICON = "assets/default-icon.png";
+const DEFAULT_ICON = "assets/star.png";
 const LOCK_ICON = "assets/lock.png";
 const UNKNOWN_ICON = "assets/question-mark.png";
 const IN_PROGRESS_ICON = "assets/in-progress.png";
