@@ -1,0 +1,52 @@
+.tech-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 6000px;
+  height: 6000px;
+}
+.tech-tree-row {
+  width: auto;
+  height: 200px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tech-tree-node {
+  width: 500px;
+  height: 200px;
+  margin: 100px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tech-tree-edge {
+  height: 2px;
+  background: #000000;
+  z-index: -100;
+  position: absolute;
+}
+.tech-tree-img {
+  width: 150px;
+  height: 150px;
+  background: white;
+}
+.tech-tree-blurb {
+  background: white;
+  padding: 5px;
+  flex-grow: 1;
+}
+.nav-bar {
+  width: 500px;
+  height: 30px;
+  position: fixed;
+  bottom: 15px;
+  left: calc(50% - 250px);
+
+  display: flex;
+  justify-content: center;
+}

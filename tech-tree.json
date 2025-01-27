@@ -1,0 +1,177 @@
+{
+  "misc": {
+    "pretty-status-website": {
+      "dependencies": ["planar-skill-tree"],
+      "icon": "assets/glow-up.png",
+      "display-name": "A Pretty Project Status Website",
+      "blurb": "Make the project status website look like the Github or Spacex website to impress newcomers"
+    },
+
+    "mvp": {
+      "dependencies": ["discord-community"],
+      "icon": "assets/blueprint.png",
+      "display-name": "Minimum Viable Product",
+      "blurb": "Build a prototype with the core functionality of the game and test if it's fun.",
+      "completed": "12-12-23",
+      "link": "https://www.roblox.com/games/13403894524/Cargo",
+      "link-text": "Play it here"
+    },
+    "tilemaps": {
+      "dependencies": ["user-testing-beta"],
+      "icon": "assets/earth.jpg",
+      "display-name": "Round Planets & Ship Interiors",
+      "blurb": "The game can save/load grids of blocks, either in rectangles for ship/building interiors or round for planets",
+      "started": "1-18-24",
+      "completed": "1-30-24",
+      "links": {
+        "GIF #1": "https://gyazo.com/efcf4923f88895fc666217157eb1275a",
+        "GIF #2": "https://gyazo.com/91456c76b849ffdf16222610745ab78e",
+        "Test here": "https://www.roblox.com/games/14556858165/ship-crew-rpg"
+      }
+    },
+    "tile-textures": {
+      "dependencies": ["tilemaps"],
+      "icon": "assets/grass-block.webp",
+      "display-name": "Render Tile Textures",
+      "blurb": "Apply 8-bit style textures to blocks"
+    },
+    "characters": {
+      "dependencies": ["tilemaps"],
+      "icon": "assets/character.png",
+      "display-name": "Playable Characters",
+      "blurb": "Players can (re)spawn a character which moves, jumps, falls in gravity, takes damage, and dies",
+      "started": "1-31-2024"
+    },
+    "character-animations": {
+      "dependencies": ["tile-textures", "characters"],
+      "icon": "assets/runner.jpg",
+      "display-name": "Character Movement Animations",
+      "blurb": "When characters walk, jump, fall, or sit still, they are animated with spritesheets"
+    },
+    "character-health": {
+      "dependencies": ["character-animations"],
+      "icon": "assets/hearts.jpg",
+      "display-name": "Character Health Displays",
+      "blurb": "Players can see their own health and when characters take damage"
+    },
+    "first-solar-system": {
+      "dependencies": ["rcss"],
+      "icon": "assets/solar-system.png",
+      "display-name": "Build a Solar System",
+      "blurb": "A set of planets, moons, and asteroids orbiting a single star"
+    },
+    "day-night-cycle": {
+      "dependencies": ["rcss"],
+      "icon": "assets/sun-moon.jpg",
+      "display-name": "Day/Night Cycle",
+      "blurb": "Suns are visible in the skies of worlds, relative to the orientation of the world and the character's position"
+    },
+    "lobby": {
+      "dependencies": ["first-solar-system"],
+      "icon": "assets/space-station.png",
+      "display-name": "Space Station Lobby",
+      "blurb": "Players spawn in a space station, where they join ship crews"
+    },
+    "starry-skies": {
+      "dependencies": ["day-night-cycle"],
+      "icon": "assets/starry-sky.jpg",
+      "display-name": "Starry Skies",
+      "blurb": "Night skies are filled with stars"
+    },
+  
+    "discord-community": {
+      "dependencies": [],
+      "icon": "assets/discord.png",
+      "display-name": "Discord Community Server",
+      "blurb": "Gather a following of friends and family to help test my game",
+      "completed": "1-1-2023",
+      "link": "https://discord.gg/enmKEVMKva",
+      "link-text": "Server Invite"
+    },
+    "status-website": {
+      "dependencies": ["mvp"],
+      "icon": "assets/graph.png",
+      "display-name": "Development as a Skill Tree",
+      "blurb": "Define high-level project tasks as upgrades in a skill tree, rendered as a website (the one you're looking at right now)",
+      "completed": "1-16-2024",
+      "links": {
+        "Github repository": "https://github.com/andrewens/ship-crew-rpg-status",
+        "Website": "https://andrewens.dev/ship-crew-rpg-status/"
+      }
+    },
+    "planar-skill-tree": {
+      "dependencies": ["status-website"],
+      "icon": "assets/big-dipper.png",
+      "display-name": "Remove Edge Crossings from Skill Tree",
+      "blurb": "Implement a planar graph drawing algorithm using Canonical Order & Shift method"
+    },
+    "chronological-project-status": {
+      "dependencies": ["status-website"],
+      "icon": "assets/calendar.png",
+      "display-name": "Chronological Project Status",
+      "blurb": "Render game upgrades in a timeline to view project velocity/history"
+    },
+    "user-testing-beta": {
+      "dependencies": ["command-prompt-beta"],
+      "icon": "assets/check-mark-shield.png",
+      "display-name": "Acceptance Testing Tool (Beta)",
+      "blurb": "Write tests that any user can play and verify using the command line",
+      "completed": "1-1-2024",
+      "links": {
+        "Test it here": "https://www.roblox.com/games/15589372711/gameplay-test-runner",
+        "Github repository": "https://github.com/andrewens/gameplay-test-runner"
+      }
+    },
+    "user-testing-v1": {
+      "dependencies": ["user-testing-beta", "command-prompt-v1"],
+      "icon": "assets/check-mark-shield.png",
+      "display-name": "Acceptance Testing Tool Version 1.0",
+      "blurb": "Rewrite Acceptance Testing Tool with unit tests to create a robust API"
+    },
+    "command-prompt-beta": {
+      "dependencies": ["mvp"],
+      "icon": "assets/command-line.png",
+      "display-name": "Custom Command Prompt (Beta)",
+      "blurb": "Developers can write CLI tools used inside of ROBLOX games",
+      "completed": "12-12-23",
+      "links": {
+        "Test it here": "https://www.roblox.com/games/15359714312/roblox-console",
+        "Github repository": "https://github.com/andrewens/roblox-console"
+      }
+    },
+    "command-prompt-v1": {
+      "dependencies": ["command-prompt-beta"],
+      "icon": "assets/textbox.png",
+      "display-name": "Command Prompt Version 1.0",
+      "blurb": "Fix ROBLOX TextBox bugs by creating a custom TextBox implementation; write unit tests to create robust software"
+    },
+    "command-windows": {
+      "dependencies": ["command-prompt-v1"],
+      "icon": "assets/browser-windows.png",
+      "display-name": "Multiple Command Windows",
+      "blurb": "Open/close multiple tabs or windows of command prompts"
+    },
+    "devops-status": {
+      "dependencies": ["lobby"],
+      "icon": "assets/status.png",
+      "display-name": "Live Server Status",
+      "blurb": "Send error reports to a discord channel to find bugs"
+    },
+    "beta-deployments": {
+      "dependencies": ["devops-status"],
+      "icon": "assets/deployment.png",
+      "display-name": "Beta Deployments",
+      "blurb": "Deploy new features to only a single server to test for bugs"
+    },
+    "rcss": {
+      "dependencies": ["characters"],
+      "icon": "assets/paint-palette.png",
+      "display-name": "Cascading Stylesheets for Lua",
+      "blurb": "Separate UI appearance / styling code from functional code",
+      "links": {
+        "Test it here": "https://www.roblox.com/games/15359714312/roblox-console",
+        "Github repository": "https://github.com/andrewens/roblox-css"
+      }
+    }
+  }
+}
