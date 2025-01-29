@@ -4,13 +4,16 @@
       "dependencies": [],
       "display-name": "Begin contract",
       "blurb": "Start programming Anime Murder Mystery.",
-      "icon": "assets/power.png"
+      "icon": "assets/power.png",
+      "completed": "1-27-25"
     },
     "load-maps": {
       "dependencies": ["start"],
-      "display-name": "Map voting",
-      "blurb": "Players can vote on a map, and it loads. Gameplay ends after four minutes, when players are teleported back to the lobby (includes timer UI).",
-      "icon": "assets/map.png"
+      "display-name": "Map loading & round cycle",
+      "blurb": "Maps are randomly chosen and loaded. Gameplay ends after four minutes, when players are teleported back to the lobby (includes timer UI).",
+      "icon": "assets/map.png",
+      "started": "1-27-25",
+      "completed": "1-29-25"
     },
 
     "spectate": {
@@ -36,7 +39,8 @@
       "dependencies": ["load-maps"],
       "display-name": "Assign roles",
       "blurb": "Sakamoto, assassins, and targets are randomly assigned to players. The more times a player is assigned Target, the greater their chance to be Sakamoto or Assassin.",
-      "icon": "assets/sheriff.png"
+      "icon": "assets/sheriff.png",
+      "started": "1-29-25"
     },
 
     "sprinting": {
