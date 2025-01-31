@@ -20,7 +20,8 @@
       "dependencies": ["load-maps"],
       "display-name": "Spectate",
       "blurb": "Players in the lobby can spectate others while they are still playing.",
-      "icon": "assets/binoculars.png"
+      "icon": "assets/binoculars.png",
+      "started": "1-31-25"
     },
     "custom-chat": {
       "dependencies": ["spectate"],
@@ -61,7 +62,8 @@
       "display-name": "Win Condition",
       "blurb": "If all Targets die, Assassins win. If all Assassins die, Sakamoto wins (what if Sakamoto is dead first?). If the round ends, surviving Targets win (includes end-of-round UI modal).",
       "icon": "assets/win.png",
-      "started": "1-30-25"
+      "started": "1-30-25",
+      "completed": "1-31-25"
     },
 
     "sakamoto": {
