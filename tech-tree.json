@@ -40,7 +40,8 @@
       "display-name": "Assign roles",
       "blurb": "Sakamoto, assassins, and targets are randomly assigned to players. The more times a player is assigned Target, the greater their chance to be Sakamoto or Assassin.",
       "icon": "assets/sheriff.png",
-      "started": "1-29-25"
+      "started": "1-29-25",
+      "completed": "1-30-25"
     },
 
     "sprinting": {
@@ -59,7 +60,8 @@
       "dependencies": ["pick-roles"],
       "display-name": "Win Condition",
       "blurb": "If all Targets die, Assassins win. If all Assassins die, Sakamoto wins (what if Sakamoto is dead first?). If the round ends, surviving Targets win (includes end-of-round UI modal).",
-      "icon": "assets/win.png"
+      "icon": "assets/win.png",
+      "started": "1-30-25"
     },
 
     "sakamoto": {
