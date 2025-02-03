@@ -29,7 +29,8 @@
       "display-name": "Custom chat",
       "blurb": "Players in the lobby can't communicate with players in-game.",
       "icon": "assets/chat.png",
-      "started": "2-3-25"
+      "started": "2-3-25",
+      "completed": "2-3-25"
     },
     "settings": {
       "dependencies": ["load-maps"],
