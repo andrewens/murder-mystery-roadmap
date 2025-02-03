@@ -21,13 +21,15 @@
       "display-name": "Spectate",
       "blurb": "Players in the lobby can spectate others while they are still playing.",
       "icon": "assets/binoculars.png",
-      "started": "1-31-25"
+      "started": "1-31-25",
+      "completed": "2-3-25"
     },
     "custom-chat": {
       "dependencies": ["spectate"],
       "display-name": "Custom chat",
       "blurb": "Players in the lobby can't communicate with players in-game.",
-      "icon": "assets/chat.png"
+      "icon": "assets/chat.png",
+      "started": "2-3-25"
     },
     "settings": {
       "dependencies": ["load-maps"],
