@@ -53,7 +53,8 @@
       "display-name": "Sprinting",
       "blurb": "Targets can sprint for a short duration.",
       "icon": "assets/sprint.png",
-      "started": "2-3-25"
+      "started": "2-3-25",
+      "completed": "2-5-25"
     },
     "pick-styles": {
       "dependencies": ["pick-roles"],
@@ -193,7 +194,8 @@
       "dependencies": ["start"],
       "display-name": "Levels & XP",
       "blurb": "Players earn XP from surviving a whole match, winning a match, and kills. XP contributes to the player's level.",
-      "icon": "assets/level-up.png"
+      "icon": "assets/level-up.png",
+      "started": "2-5-25"
     },
     "yen": {
       "dependencies": ["start"],
