@@ -60,7 +60,8 @@
       "dependencies": ["pick-roles"],
       "display-name": "Hero/Assassin styles",
       "blurb": "Players can spin for Hero & Assassin styles in the lobby.",
-      "icon": "assets/fortune-wheel.png"
+      "icon": "assets/fortune-wheel.png",
+      "started": "2-7-25"
     },
     "win-condition": {
       "dependencies": ["pick-roles"],
@@ -202,7 +203,9 @@
       "dependencies": ["start"],
       "display-name": "Yen",
       "blurb": "Players can purchase (or gift) Yen with Robux or earn it from gameplay.",
-      "icon": "assets/yen.png"
+      "icon": "assets/yen.png",
+      "started": "2-6-25",
+      "completed": "2-7-25"
     },
 
     "style-slots": {
