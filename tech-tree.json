@@ -61,7 +61,8 @@
       "display-name": "Hero/Assassin styles",
       "blurb": "Players can spin for Hero & Assassin styles in the lobby.",
       "icon": "assets/fortune-wheel.png",
-      "started": "2-7-25"
+      "started": "2-7-25",
+      "completed": "2-12-25"
     },
     "win-condition": {
       "dependencies": ["pick-roles"],
