@@ -213,7 +213,8 @@
       "dependencies": ["pick-styles"],
       "display-name": "Style Slots",
       "blurb": "Players can purchase (or gift) extra slots to store Hero & Assassin styles. Style slots can be locked.",
-      "icon": "assets/chest.png"
+      "icon": "assets/chest.png",
+      "completed": "2-20-25"
     },
     "lucky-spins": {
       "dependencies": ["pick-styles"],
