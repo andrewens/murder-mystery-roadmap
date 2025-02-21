@@ -77,14 +77,16 @@
       "dependencies": ["pick-styles"],
       "display-name": "Sakamoto Attacks/Abilities",
       "blurb": "This node helps organize the skill tree, but isn't a feature.",
-      "icon": "assets/sakamoto.webp"
+      "icon": "assets/sakamoto.webp",
+      "completed": "2-20-25"
     },
 
     "assassin": {
       "dependencies": ["pick-styles"],
       "display-name": "Assassin Attacks/Abilities",
       "blurb": "This node helps organize the skill tree, but isn't a feature.",
-      "icon": "assets/kanaguri.webp"
+      "icon": "assets/kanaguri.webp",
+      "completed": "2-20-25"
     },
 
     "punch": {
